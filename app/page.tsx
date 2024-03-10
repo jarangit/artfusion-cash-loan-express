@@ -1,16 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
+import Banner from "./components/banner";
+import How from "./components/how";
 
 export default function Home() {
   return (
     <>
-      <Head >
+      <Head>
         <title>Cash Loans Express</title>
       </Head>
       <div className="min-h-screen">
-        <div className="text-main">text</div>
-        <div className="text-red-300">text</div>
-        <div>test</div>
+        <Banner />
+        <How />
       </div>
     </>
   );
