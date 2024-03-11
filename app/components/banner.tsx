@@ -1,5 +1,8 @@
 import React from "react";
 import Column from "./column";
+import { TiInputChecked } from "react-icons/ti";
+import Row from "./row";
+import FormBanner from "./form-banner";
 
 type Props = {};
 
@@ -9,15 +12,26 @@ const Banner = (props: Props) => {
       <div className="my-container">
         <Column className="text-white text-center gap-6">
           <div>
-            <div className="text-2xl font-bold">{`Funds could be yours by the next business day*`}</div>
+            <div className="text-2xl font-medium">{`Funds could be yours by the next business day*`}</div>
             <div>{`All Online With No Phone Calls`}</div>
           </div>
-          <div>FORM</div>
+          <div>
+            <FormBanner />
+          </div>
 
-          <Column>
-            <div> Available for all credit types</div>
-            <div> Money straight to your bank</div>
-            <div> Safe, secure and reliable</div>
+          <Column className=" mx-auto">
+            <Row gap={3}>
+              <TiInputChecked size={25} />
+              <div> Available for all credit types</div>
+            </Row>
+            <Row gap={3}>
+              <TiInputChecked size={25} />
+              <div> Money straight to your bank</div>
+            </Row>
+            <Row gap={3}>
+              <TiInputChecked size={25} />
+              <div> Safe, secure and reliable</div>
+            </Row>
           </Column>
         </Column>
       </div>

@@ -1,11 +1,11 @@
 "use client"; // This is a client component 👈🏽
 
 import React, { useEffect, useState } from "react";
+import { content } from "../content/text";
 type Props = {};
 
 const TopLabel = (props: Props) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  console.log('%cMyProject%cline:7%cisScrolled', 'color:#fff;background:#ee6f57;padding:3px;border-radius:2px', 'color:#fff;background:#1f3c88;padding:3px;border-radius:2px', 'color:#fff;background:rgb(38, 157, 128);padding:3px;border-radius:2px', isScrolled)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,9 +32,9 @@ const TopLabel = (props: Props) => {
         <div
           className={` ${
             isScrolled ? "opacity-100" : "opacity-0"
-          } border bg-white text-center p-3 font-semibold transition-all`}
+          } border bg-white text-center p-3 font-medium transition-all`}
         >
-          CashLoansExpress.com
+          {`${content.domain}`}
         </div>
       </div>
     </div>

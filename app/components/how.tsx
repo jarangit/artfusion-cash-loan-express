@@ -7,7 +7,7 @@ type Props = {};
 const How = (props: Props) => {
   return (
     <div className="my-container !py-24">
-      <div className="text-4xl font-bold text-center ">
+      <div className="text-4xl font-medium text-center ">
         How can CashLoanExpress help?
       </div>
 
@@ -22,7 +22,7 @@ const How = (props: Props) => {
                 height={200}
               />
             </div>
-            <div className="text-main text-3xl font-semibold">
+            <div className="text-main text-3xl font-medium">
               Mobile Friendly
             </div>
             <div>Easy application online and from your mobile on-the-go</div>
@@ -38,7 +38,7 @@ const How = (props: Props) => {
                 height={200}
               />
             </div>
-            <div className="text-main text-3xl font-semibold">Fast Funding</div>
+            <div className="text-main text-3xl font-medium">Fast Funding</div>
             <div>Funds transferred quickly to your account when approved</div>
           </Column>
         </div>
@@ -52,7 +52,7 @@ const How = (props: Props) => {
                 height={200}
               />
             </div>
-            <div className="text-main text-3xl font-semibold">Loan Amounts</div>
+            <div className="text-main text-3xl font-medium">Loan Amounts</div>
             <div>Loan amounts offers from $200 to $3,000</div>
           </Column>
         </div>
@@ -66,7 +66,7 @@ const How = (props: Props) => {
                 height={200}
               />
             </div>
-            <div className="text-main text-3xl font-semibold">
+            <div className="text-main text-3xl font-medium">
               Personal Service
             </div>
             <div>Loans suited to your personal needs and circumstances</div>
