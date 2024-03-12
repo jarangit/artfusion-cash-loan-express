@@ -8,7 +8,7 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <div className=" my-container">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 border-b-2 py-24">
+      {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-10 border-b-2 py-24">
         <div>
           <Column gap={10} className="">
             <div className="font-medium text-lg">{`${content.domain}`}</div>
@@ -43,7 +43,7 @@ const Footer = (props: Props) => {
             <div>E-Consent</div>
           </Column>
         </div>
-      </div>
+      </div> */}
 
       <div>
         <Column className="gap-10 text-center w-full text-sm py-24">
