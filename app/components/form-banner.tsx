@@ -30,9 +30,9 @@ const FormBanner = (props: Props) => {
   }, []);
 
   return (
-    <div className="bg-white rounded-lg  w-[350px] lg:w-[400px] mx-auto p-6 text-black">
+    <div className="bg-white rounded-lg  w-[350px] md:w-[550px] mx-auto p-10 text-black">
       <Column gap={6}>
-        <p className=" text-black font-medium text-3xl">${value}</p>
+        <p className=" text-black font-medium text-5xl">${value}</p>
         <input
           type="range"
           min="0"
@@ -53,10 +53,9 @@ const FormBanner = (props: Props) => {
           <ButtonGetStart />
         </div>
 
-        <Column className="text-sm">
+        <Column className="text-md font-normal max-w-[200px] mx-auto">
           <div>{`Apply now and get a 
 decision within minutes`}</div>
-          <div>{`decision within minutes`}</div>
         </Column>
       </Column>
     </div>

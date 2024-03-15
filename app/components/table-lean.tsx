@@ -4,8 +4,8 @@ type Props = {};
 
 const TableLean = (props: Props) => {
   return (
-    <div className="border max-w-screen overflow-y-scroll">
-      <table className="w-ful ">
+    <div className="border max-w-screen overflow-y-scroll w-full lg:overflow-hidden">
+      <table className="w-full">
         <tbody>
           <tr className="background--primary color--white font-weight--400">
             <th className="font-medium p-3 border">Loan Amount</th>

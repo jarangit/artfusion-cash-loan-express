@@ -3,6 +3,7 @@ import Column from "./column";
 import { TiInputChecked } from "react-icons/ti";
 import Row from "./row";
 import FormBanner from "./form-banner";
+import { content } from "../content/text";
 
 type Props = {};
 
@@ -10,11 +11,12 @@ const Banner = (props: Props) => {
   return (
     <div className="min-h-24 bg-green-dark py-24 ">
       <div className="my-container">
-        <Column className="text-white text-center gap-6">
-          <div>
-            <div className="text-2xl font-medium">{`Funds could be yours by the next business day*`}</div>
-            <div>{`All Online With No Phone Calls`}</div>
-          </div>
+        <Column className="text-white text-center gap-10">
+          <Column className="gap-6">
+            <div className="font-bold text-xl">{content.domain}</div>
+            <div className="text-5xl font-medium">{`Funds could be yours by the next business day*`}</div>
+            <div className="text-3xl font-normal">{`All Online With No Phone Calls`}</div>
+          </Column>
           <div>
             <FormBanner />
           </div>
