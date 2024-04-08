@@ -9,5 +9,5 @@ export default function cloudinaryLoader({
 }) {
   const params = ["f_auto", "c_limit", `w_${width}`, `q_${quality || "auto"}`];
   const serverUrl = "https://opplending.com";
-  return `${serverUrl}/${params.join(",")}${src}`;
+  return `${serverUrl}/${src}`;
 }
